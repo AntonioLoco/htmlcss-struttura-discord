@@ -17,9 +17,16 @@ html{
     display: flex;
 
     /* DEBUG */
-    /* background-color: lightgreen; */
+    background-color: lightgreen;
 }
 
+section:nth-child(2n + 0){
+    background-color: lightgrey;
+}
+
+.block-info:nth-child(2n + 0) .description-photo{
+    order: -1;
+}
 
 /* HEADER */
 
@@ -84,5 +91,51 @@ html{
     min-height: 150px;
     background-color: violet;
     border: 1px dashed black;    
+}
 
+
+/* MAIN */
+
+/* Blocco informazioni */
+.block-info{
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/* Photo del block */
+.flex-container .photo{
+    width: 65%;
+
+    /* DEBUG */
+    min-height: 150px;
+    background-color: #1e90ff;
+    border: 1px dashed black;    
+}
+
+/* Testo del blocco */
+.flex-container .description-photo{
+    width: 35%;
+
+    /* DEBUG */
+    min-height: 150px;
+    background-color: #ffc0cb;
+    border: 1px dashed black;    
+}
+
+/* Blocco Adv */
+.block-adv{
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/* Contenuto ADV */
+.adv-contain{
+    width: 100%;
+
+    /* DEBUG */
+    background-color: green;
+    min-height: 300px;
+    border: 1px dashed black;    
 }
