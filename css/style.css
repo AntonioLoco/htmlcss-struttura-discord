@@ -8,19 +8,15 @@
 /* COMMON */
 html{
     font-family: 'Whitney', sans-serif; 
-    font-size: 62,5%;   
 }
 
 .flex-container{
     width: 70%;
     margin: 0 auto;
     display: flex;
-
-    /* DEBUG */
-    background-color: lightgreen;
 }
 
-section:nth-child(2n + 0){
+main section:nth-child(2n + 0){
     background-color: lightgrey;
 }
 
@@ -72,7 +68,6 @@ section:nth-child(2n + 0){
     display: inline-block;
 }
 
-
 /* jubtron */
 .jumbtron{
     width: 100%;
@@ -95,7 +90,6 @@ section:nth-child(2n + 0){
 
 
 /* MAIN */
-
 /* Blocco informazioni */
 .block-info{
     width: 100%;
@@ -137,5 +131,67 @@ section:nth-child(2n + 0){
     /* DEBUG */
     background-color: green;
     min-height: 300px;
+    border: 1px dashed black;    
+}
+
+/* FOOTER */
+footer{
+    background-color:#23272a;
+}
+
+.footer-info,
+.footer-sidebar{
+    border-bottom: 1px solid white;
+}
+
+/* footer information */
+.footer-info{
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+
+.footer-title{
+    width: 35%;
+
+    /* DEBUG */
+    min-height: 200px;
+    background-color: #f08080;
+    border: 1px dashed black;    
+}
+
+.col{
+    width: calc(65% / 4);
+
+    /* DEBUG */
+    min-height: 200px;
+    border: 1px dashed white;    
+    background-color: #20b2aa;
+}
+
+
+/* Footer sidebar */
+.footer-sidebar{
+    width: 100%;
+    padding-top: 1em;
+}
+
+.sidebar-contain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* DEBUG */
+    min-height: 50px;
+    background-color:#7fffd4;
+}
+
+.logo-footer,
+.bottone-footer{
+    padding: .1em;
+
+    /* DEBUG */
+    background-color: lightgrey;
     border: 1px dashed black;    
 }
