@@ -1,0 +1,88 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html{
+    font-family: 'Whitney', sans-serif; 
+    font-size: 62,5%;   
+}
+
+.flex-container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+
+    /* DEBUG */
+    /* background-color: lightgreen; */
+}
+
+
+/* HEADER */
+
+/* navigation bar */
+.navbar{
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    /* DEBUG */
+    background-color: lightblue;
+}
+
+.flex-container .logo,
+.flex-container .login{
+    width: 25%;
+    padding: .2em;
+    
+    /* DEBUG */
+    background-color: orange;
+    border: 1px dashed black;
+}
+
+.flex-container .login{
+    text-align: right;
+}
+
+.flex-container .collegamenti{
+    width: 50%;
+    padding: .2em;
+
+    /* DEBUG */
+    background-color: orange;
+    border: 1px dashed black;    
+}
+
+.collegamenti ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.collegamenti ul li{
+    display: inline-block;
+}
+
+
+/* jubtron */
+.jumbtron{
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+
+    /* DEBUG */
+    background-color: blue;
+}
+
+.jumbtron-contain{
+    width: 80%;
+    margin: 0 auto;
+
+    /* DEBUG */
+    min-height: 150px;
+    background-color: violet;
+    border: 1px dashed black;    
+
+}
