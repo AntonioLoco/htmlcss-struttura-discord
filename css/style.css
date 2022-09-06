@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* COMMON */
 html{
     font-family: 'Whitney', sans-serif; 
@@ -12,17 +14,21 @@ html{
 
 .flex-container{
     width: 70%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
+}
+
+.content{
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 main section:nth-child(2n + 0){
     background-color: lightgrey;
 }
 
-.block-info:nth-child(2n + 0) .description-photo{
-    order: -1;
-}
 
 /* HEADER */
 header{
@@ -91,8 +97,7 @@ header{
 /* Blocco informazioni */
 .block-info{
     width: 100%;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding: 1.5em 0;
 }
 
 /* Photo del block */
@@ -116,14 +121,13 @@ header{
 }
 
 /* Blocco Adv */
-.block-adv{
+.big-section{
     width: 100%;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding: 1.5em 0;
 }
 
 /* Contenuto ADV */
-.adv-contain{
+.big-contain{
     width: 100%;
 
     /* DEBUG */
@@ -132,24 +136,24 @@ header{
     border: 1px dashed black;    
 }
 
+
 /* FOOTER */
 footer{
     background-color:#23272a;
 }
 
-.footer-info,
-.footer-sidebar{
+/* Footer top */
+.footer-top{
     border-bottom: 1px solid white;
 }
 
-/* footer information */
-.footer-info{
+.footer-top{
     width: 100%;
     padding-top: .5em;
     padding-bottom: 1em;
 }
 
-.footer-title{
+.footer-social{
     width: 35%;
 
     /* DEBUG */
@@ -158,7 +162,7 @@ footer{
     border: 1px dashed black;    
 }
 
-.col{
+.footer-col{
     width: calc(65% / 4);
 
     /* DEBUG */
@@ -168,8 +172,8 @@ footer{
 }
 
 
-/* Footer sidebar */
-.footer-sidebar{
+/* Footer Bottom */
+.footer-bottom{
     width: 100%;
     padding-top: 1em;
 }
